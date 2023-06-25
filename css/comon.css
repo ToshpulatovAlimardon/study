@@ -34,6 +34,7 @@ header {
 #home {
     visibility: hidden;
     position: relative;
+    display: none;
 }
 
 /* media menu */
@@ -83,7 +84,7 @@ header {
         position: fixed;
         top: 0;
         left: 0;
-        background-color: var(--color-dark);
+        background-color: transparent;
     }
         .menu .logo img {
             width: 25px;
@@ -550,11 +551,9 @@ header {
 }
 /* Video cours */
 header .video_cours {
-    width: 75%;
+    width: 100%;
     height: 100%;
-    background-image: url("../images/block-background.png");
-    background-size: contain;
-    background-repeat: repeat-y;
+    background: #fff;
     padding: 50px 24px;
 }
     header .video_cours h2 {
@@ -563,10 +562,6 @@ header .video_cours {
         font-weight: 600;
         color: var(--color-video);
         text-align: center;
-    }
-    header .video_cours iframe {
-        width: 100%;
-        height: 545px;
     }
     header .video_cours a {
         width: 169px;
